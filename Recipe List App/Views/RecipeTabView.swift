@@ -13,7 +13,7 @@ struct RecipeTabView: View {
         
         TabView {
             
-            Text("Featured View")
+            WorkoutProgramListView()
                 .tabItem {
                     VStack {
                         Image(systemName: "star.fill")

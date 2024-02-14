@@ -17,6 +17,11 @@
 		831EE6A325B0C99A00BACCDD /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE6A225B0C99A00BACCDD /* RecipeModel.swift */; };
 		831EE6A725B0CAD000BACCDD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE6A625B0CAD000BACCDD /* DataService.swift */; };
 		831EE6C625B0E0A200BACCDD /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831EE6C525B0E0A200BACCDD /* RecipeDetailView.swift */; };
+		DD0B1E3F2B7C61EC00AD2FA5 /* WPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0B1E3E2B7C61EC00AD2FA5 /* WPModel.swift */; };
+		DD0B1E412B7C929800AD2FA5 /* WorkoutProgramDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0B1E402B7C929800AD2FA5 /* WorkoutProgramDetailView.swift */; };
+		DD219B5D2B7C595C006A5CEC /* WorkoutProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD219B5C2B7C595C006A5CEC /* WorkoutProgram.swift */; };
+		DD219B5F2B7C5A8E006A5CEC /* workoutprograms.json in Resources */ = {isa = PBXBuildFile; fileRef = DD219B5E2B7C5A8E006A5CEC /* workoutprograms.json */; };
+		DD219B612B7C5C27006A5CEC /* WorkoutProgramListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD219B602B7C5C27006A5CEC /* WorkoutProgramListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		831EE6A225B0C99A00BACCDD /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		831EE6A625B0CAD000BACCDD /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		831EE6C525B0E0A200BACCDD /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		DD0B1E3E2B7C61EC00AD2FA5 /* WPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WPModel.swift; sourceTree = "<group>"; };
+		DD0B1E402B7C929800AD2FA5 /* WorkoutProgramDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgramDetailView.swift; sourceTree = "<group>"; };
+		DD219B5C2B7C595C006A5CEC /* WorkoutProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgram.swift; sourceTree = "<group>"; };
+		DD219B5E2B7C5A8E006A5CEC /* workoutprograms.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = workoutprograms.json; sourceTree = "<group>"; };
+		DD219B602B7C5C27006A5CEC /* WorkoutProgramListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgramListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +101,8 @@
 				830E9B5B25CB507C00761268 /* RecipeTabView.swift */,
 				831EE68125B0C74D00BACCDD /* RecipeListView.swift */,
 				831EE6C525B0E0A200BACCDD /* RecipeDetailView.swift */,
+				DD219B602B7C5C27006A5CEC /* WorkoutProgramListView.swift */,
+				DD0B1E402B7C929800AD2FA5 /* WorkoutProgramDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				831EE6A225B0C99A00BACCDD /* RecipeModel.swift */,
+				DD0B1E3E2B7C61EC00AD2FA5 /* WPModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -107,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				831EE69825B0C82C00BACCDD /* Recipe.swift */,
+				DD219B5C2B7C595C006A5CEC /* WorkoutProgram.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -115,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				831EE69525B0C7E100BACCDD /* recipes.json */,
+				DD219B5E2B7C5A8E006A5CEC /* workoutprograms.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -186,6 +201,7 @@
 			files = (
 				831EE68725B0C74E00BACCDD /* Preview Assets.xcassets in Resources */,
 				831EE6A025B0C86300BACCDD /* recipes.json in Resources */,
+				DD219B5F2B7C5A8E006A5CEC /* workoutprograms.json in Resources */,
 				831EE68425B0C74E00BACCDD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,10 +215,14 @@
 			files = (
 				831EE69D25B0C85E00BACCDD /* Recipe.swift in Sources */,
 				831EE6C625B0E0A200BACCDD /* RecipeDetailView.swift in Sources */,
+				DD0B1E412B7C929800AD2FA5 /* WorkoutProgramDetailView.swift in Sources */,
+				DD219B5D2B7C595C006A5CEC /* WorkoutProgram.swift in Sources */,
 				831EE6A325B0C99A00BACCDD /* RecipeModel.swift in Sources */,
 				831EE68225B0C74D00BACCDD /* RecipeListView.swift in Sources */,
 				831EE68025B0C74D00BACCDD /* Recipe_List_App.swift in Sources */,
+				DD0B1E3F2B7C61EC00AD2FA5 /* WPModel.swift in Sources */,
 				831EE6A725B0CAD000BACCDD /* DataService.swift in Sources */,
+				DD219B612B7C5C27006A5CEC /* WorkoutProgramListView.swift in Sources */,
 				830E9B5C25CB507C00761268 /* RecipeTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

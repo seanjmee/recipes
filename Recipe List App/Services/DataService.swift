@@ -56,4 +56,50 @@ class DataService {
         return [Recipe]()
     }
     
+    static func getLocalWorkoutPrograms() -> [WorkoutProgram] {
+        
+        // Parse local json file
+        
+        // Get a url path to the json file
+        let pathString = Bundle.main.path(forResource: "workoutprograms", ofType: "json")
+        
+        // Check if pathString is not nil, otherwise...
+        guard pathString != nil else {
+            return [WorkoutProgram]()
+        }
+        
+        // Create a url object
+        let url = URL(fileURLWithPath: pathString!)
+        
+        do {
+            // Create a data object
+            let data = try Data(contentsOf: url)
+            
+            // Decode the data with a JSON decoder
+            let decoder1 = JSONDecoder()
+            
+            do {
+                
+                let workoutProgramData = try decoder1.decode([WorkoutProgram].self, from: data)
+                
+                // Add the unique IDs
+                for r in workoutProgramData {
+                    r.id = UUID()
+                }
+                
+                // Return the recipes
+                return workoutProgramData
+            }
+            catch {
+                // error with parsing json
+                print(error)
+            }
+        }
+        catch {
+            // error with getting data
+            print(error)
+        }
+        
+        return [WorkoutProgram]()
+    }
 }
